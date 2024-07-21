@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagens</title>
+    <style>
+        button {
+            padding: 15px 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desasfio das Mensagens</h1>
+
+    <button id="funcao1">Botão 1</button>
+
+    <button id="funcao2">Botão 2</button>
+
+    <button id="funcao3">Botão 3</button>
+
+    <script>
+        let funcao1 = document.getElementById('funcao1');
+
+        let funcao2 = document.getElementById('funcao2');
+
+        let funcao3 = document.querySelector('#funcao3');
+
+    funcao1.addEventListener('click', minhaFuncao1);
+
+    funcao2.addEventListener('click', minhaFuncao2);
+
+    funcao3.addEventListener('click', minhaFuncao3)
+
+    
+
+        function minhaFuncao1() {
+            alert('Você clicou no 1° botão! ')
+        }
+
+        function minhaFuncao2() {
+            alert('Você clicou no 2° botão!')
+        }
+
+        function minhaFuncao3() {
+            alert('Você clicou no 3° botão!')
+        }
+    </script>
+</body>
+</html>
